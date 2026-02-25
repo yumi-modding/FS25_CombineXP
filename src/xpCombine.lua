@@ -128,12 +128,10 @@ function xpCombine:onLoad(savegame)
         local coef = 1.5 -- It was 1.5 on FS19, but 1.2 seems better
         local keyCategory = "vehicle.storeData.category"
         local category = self.xmlFile:getValue(keyCategory)
-        if category == "forageHarvesters" or category == "forageHarvesterCutters" then
-            coef = 12.
-        elseif category == "beetVehicles" or category == "beetHarvesting" then
-            coef = 0.6
-		elseif category == "potatoVehicles" then
-            coef = 0.3
+        for _, cat in pairs(category) do
+            if cat == "beetVehicles" or cat == "beetHarvesting" or cat == "vegetableHarvesters" or cat == "potatoHarvesting" then
+                coef = 0.6
+            end
         end
         local key, motorId = ConfigurationUtil.getXMLConfigurationKey(self.xmlFile, self.configurations.motor, "vehicle.motorized.motorConfigurations.motorConfiguration", "vehicle.motorized", "motor")
         local fallbackConfigKey = "vehicle.motorized.motorConfigurations.motorConfiguration(0)"
@@ -479,7 +477,6 @@ function xpCombine:getSpeedLimit(superfunc, onlyIfWorking)
     local spec_xpCombine = self.spec_xpCombine
     local self_vehicle = self
     local limit, doCheckSpeedLimit = superfunc(self, onlyIfWorking)
-    -- print(self:getFullName().." "..tostring(limit))
     if spec_xpCombine == nil then
         -- Manage FS22_RealSpeedLimit mod
         if self.rootVehicle then
@@ -497,8 +494,6 @@ function xpCombine:getSpeedLimit(superfunc, onlyIfWorking)
                     limit = spec_xpCombine.speedLimit
                     -- if xpCombine.debug then print("speedLimit from materialQty: "..tostring(limit)) end
                 end
-            else
-                limit = spec_xpCombine.mrGenuineSpeedLimit
             end
             spec_xpCombine.mrCombineLimiter.highMoisture = false
             local fruitType = g_fruitTypeManager:getFruitTypeIndexByFillTypeIndex(self_vehicle:getFillUnitFillType(spec_combine.fillUnitIndex))
