@@ -32,9 +32,9 @@
 	<!-- additional fruits -->
     <fruitType name="alfalfa"       		mrMaterialQtyFx="4.47" />
     <fruitType name="humusactive"   		mrMaterialQtyFx="4.15" />
-    <fruitType name="floweringcatchcrop"    mrMaterialQtyFx="3.2" />
-    <fruitType name="winterbarley"  		mrMaterialQtyFx="1.06" />
-    <fruitType name="winterwheat" 			mrMaterialQtyFx="1.04" />
+    <fruitType name="floweringCatchCrop"    mrMaterialQtyFx="3.2" />
+    <fruitType name="winterBarley"  		mrMaterialQtyFx="1.06" />
+    <fruitType name="winterWheat" 			mrMaterialQtyFx="1.04" />
     <fruitType name="onion"     			mrMaterialQtyFx="3.54" />
     <fruitType name="poppy"       			mrMaterialQtyFx="0.64" />
     <fruitType name="silagemaize"         	mrMaterialQtyFx="5.53" />
