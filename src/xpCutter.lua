@@ -23,7 +23,7 @@ function xpCutter:onEndWorkAreaProcessing(superFunc, dt, hasProcessed)
         local lastMultiplierArea = spec.workAreaParameters.lastMultiplierArea -- * 0.1
 		local lastLiters = 0
         if spec.workAreaParameters.combineVehicle ~= nil then
-            lastLiters = spec.workAreaParameters.combineVehicle["spec_FS25_CombineXP.xpCombine"].lastLiters
+            lastLiters = spec.workAreaParameters.combineVehicle[("spec_%s.xpCombine"):format(xpCombine.modName)].lastLiters
         end
         if spec.workAreaParameters.combineVehicle then
             local spec_xpCombine = spec.workAreaParameters.combineVehicle.spec_xpCombine
