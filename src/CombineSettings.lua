@@ -30,20 +30,32 @@ function CombineSettings:load()
 
     -- SaveSettings
     FSCareerMissionInfo.saveToXMLFile = Utils.appendedFunction(FSCareerMissionInfo.saveToXMLFile, CombineSettings.saveSettings)
-
-end
-
-function CombineSettings.init()
-    -- Game Settings Menu
-    InGameMenuSettingsFrame.onFrameOpen = Utils.appendedFunction(InGameMenuSettingsFrame.onFrameOpen, CombineSettings.initGameSettingsGui)
 end
 
 function CombineSettings:initGameSettingsGui()
     if CombineSettings.debug then print("CombineSettings:initGameSettingsGui") end
     if self.combineGameplay == nil then
 
+        -- Validate required GUI elements exist
+        if self.gameSettingsLayout == nil then
+            return
+        end
+
+        if self.economicDifficulty == nil then
+            return
+        end
+
+        if self.checkTraffic == nil then
+            return
+        end
+
         -- Section Header
-        local title = self.gameSettingsLayout.elements[7]:clone()
+        local numElements = #self.gameSettingsLayout.elements
+        local headerIndex = math.min(7, numElements)
+        if headerIndex < 1 then
+            return
+        end
+        local title = self.gameSettingsLayout.elements[headerIndex]:clone()
         title:applyProfile("fs25_settingsSectionHeader", true)
         title:setText(CombineSettings.modTitle)
         title.focusChangeData={}
@@ -54,6 +66,8 @@ function CombineSettings:initGameSettingsGui()
         local target = g_combinexp
 
         --- Create Gameplay Element
+        local settingsCloneIndex = math.min(5, numElements)
+
         local optionClone = self.economicDifficulty:clone()
         optionClone.target = target
         optionClone.onClickCallback = CombineSettings.onSettingsStateChanged
@@ -68,7 +82,7 @@ function CombineSettings:initGameSettingsGui()
             self.combineGameplay,
             "combineGameplay",
             "combineGameplaySetting",
-            self.gameSettingsLayout.elements[5]
+            self.gameSettingsLayout.elements[settingsCloneIndex]
         )
         local gameplay = 1
         if g_combinexp.powerBoost == xpCombine.powerBoostNormal then
@@ -91,7 +105,7 @@ function CombineSettings:initGameSettingsGui()
             self.combinePower,
             "combinePower",
             "combinePowerSetting",
-            self.gameSettingsLayout.elements[5]
+            self.gameSettingsLayout.elements[settingsCloneIndex]
         )
         self.combinePower:setIsChecked(g_combinexp.powerDependantSpeed.isActive, true)
         self.combinePower:updateSelection() -- Required to prevent GUI misbehavior when initialized to true
@@ -109,7 +123,7 @@ function CombineSettings:initGameSettingsGui()
             self.combineDaytime,
             "combineDaytime",
             "combineDaytimeSetting",
-            self.gameSettingsLayout.elements[5]
+            self.gameSettingsLayout.elements[settingsCloneIndex]
         )
         self.combineDaytime:setIsChecked(g_combinexp.timeDependantSpeed.isActive, true)
         self.combineDaytime:updateSelection() -- Required to prevent GUI misbehavior when initialized to true
@@ -193,4 +207,5 @@ function CombineSettings:getText(key)
     return g_i18n.modEnvironments[CombineSettings.name].texts[key]
 end
 
-CombineSettings.init()
+-- Hook at source time (before other mods can overwrite onFrameOpen during mission load)
+InGameMenuSettingsFrame.onFrameOpen = Utils.appendedFunction(InGameMenuSettingsFrame.onFrameOpen, CombineSettings.initGameSettingsGui)
