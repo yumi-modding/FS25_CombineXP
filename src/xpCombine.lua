@@ -128,9 +128,11 @@ function xpCombine:onLoad(savegame)
         local coef = 1.5 -- It was 1.5 on FS19, but 1.2 seems better
         local keyCategory = "vehicle.storeData.category"
         local category = self.xmlFile:getValue(keyCategory)
-        for _, cat in pairs(category) do
-            if cat == "beetVehicles" or cat == "beetHarvesting" or cat == "vegetableHarvesters" or cat == "potatoHarvesting" then
-                coef = 0.6
+        if category ~= nil then
+            for _, cat in pairs(category) do
+                if cat == "beetVehicles" or cat == "beetHarvesting" or cat == "vegetableHarvesters" or cat == "potatoHarvesting" then
+                    coef = 0.6
+                end
             end
         end
         local key, motorId = ConfigurationUtil.getXMLConfigurationKey(self.xmlFile, self.configurations.motor, "vehicle.motorized.motorConfigurations.motorConfiguration", "vehicle.motorized", "motor")

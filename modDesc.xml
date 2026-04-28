@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="107">
     <author>yumi</author>
-    <version>1.0.1.0</version>        
+    <version>1.0.2.0</version>        
     <title>
         <en>Combine XPerience</en>
     </title>
@@ -17,6 +17,8 @@ Dedicated settings are available in Game settings to enable/disable specific beh
 GitHub link: https://github.com/yumi-modding/FS25_CombineXP
 
 Changelog:
+v1.0.2.0
+  - Fix error with combine vehicle with no category (like in  Etruria map)
 v1.0.1.0
   - Fix settings menu compatibility with other mods and adding additional fruits attributes
 ]]></en>
@@ -31,6 +33,8 @@ Des paramètres dédiés sont disponibles dans Paramètres du jeu pour activer/d
 GitHub link: https://github.com/yumi-modding/FS25_CombineXP
 
 Changelog:
+v1.0.2.0
+  - Correction de l'erreur avec les moissonneuses sans catégorie (comme sur la carte d'Etruria)
 v1.0.1.0
   - Correction du menu des paramètres pour la compatibilité avec d'autres mods et ajout d'attributs pour les cultures supplémentaires
 ]]></fr>
@@ -45,6 +49,8 @@ Dedizierte Einstellungen sind in den Spieleinstellungen verfügbar, um bestimmte
 GitHub link: https://github.com/yumi-modding/FS25_CombineXP
 
 Changelog:
+v1.0.2.0
+  - Fehler mit Mähdreschern ohne Kategorie behoben (wie auf der Etruria-Karte)
 v1.0.1.0
   - Behebt die Kompatibilität des Einstellungsmenüs mit anderen Mods und fügt zusätzliche Attribute für Früchte hinzu
 ]]></de>
@@ -59,6 +65,8 @@ v1.0.1.0
 GitHub link: https://github.com/yumi-modding/FS25_CombineXP
 
 Changelog:
+v1.0.2.0
+  - Исправление ошибки с комбайнами без категории (как на карте Etruria)
 v1.0.1.0
   - Исправлена совместимость меню настроек с другими модами и добавлены дополнительные атрибуты для культур
 ]]></ru>
@@ -73,6 +81,8 @@ Dedykowane ustawienia są dostępne w Ustawienia gry, aby włączać/wyłączać
 GitHub link: https://github.com/yumi-modding/FS25_CombineXP
 
 Changelog:
+v1.0.2.0
+  - Naprawiono błąd z pojazdem łączonym bez kategorii (jak na mapie Etruria)
 v1.0.1.0
   - Naprawiono kompatybilność menu ustawień z innymi modami i dodano dodatkowe atrybuty dla upraw
 ]]></pl>
@@ -87,6 +97,8 @@ Configurações dedicadas estão disponíveis nas Configurações do jogo para a
 GitHub link: https://github.com/yumi-modding/FS25_CombineXP
 
 Changelog:
+v1.0.2.0
+  - Corrigido erro ao combinar veículos sem categoria (como no mapa Etruria)
 v1.0.1.0
   - Corrige a compatibilidade do menu de configurações com outros mods e adiciona atributos adicionais para culturas
 ]]></br>
@@ -101,6 +113,8 @@ Impostazioni dedicate sono disponibili nelle Impostazioni di gioco per abilitare
 GitHub link: https://github.com/yumi-modding/FS25_CombineXP
 
 Changelog:
+v1.0.2.0
+  - Risolto l'errore relativo alla combinazione di veicoli senza categoria (come nella mappa dell'Etruria).
 v1.0.1.0
   - Corregge la compatibilità del menu delle impostazioni con altre mod e aggiunge attributi aggiuntivi per le colture
 ]]></it>   
@@ -115,6 +129,8 @@ Configurações dedicadas estão disponíveis nas Definições de Jogo para ativ
 GitHub link: https://github.com/yumi-modding/FS25_CombineXP
 
 Changelog:
+v1.0.2.0
+  - Corrigido erro ao combinar veículos sem categoria (como no mapa Etruria)
 v1.0.1.0
   - Corrige a compatibilidade do menu de definições com outros mods e adiciona atributos adicionais para culturas
 ]]></pt>	    
