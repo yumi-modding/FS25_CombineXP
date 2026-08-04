@@ -156,7 +156,7 @@ v1.0.1.0
         <text name="warning_highMoistureAtThisTime">
             <fr>L'humidité de la culture est élevée à cette heure de la journée et réduit la vitesse de moisson</fr>
             <en>Crop moisture is high at this time of the day and reduce combining speed</en>
-            <de>Die Luftfeuchtigkeit der Ernteist zu dieser Tageszeit hoch und verringert die Erntegeschwindigkeitslimit</de>
+            <de>Die Feuchtigkeit der Feldfrucht ist zu dieser Tageszeit zu hoch. Daher verringert sich die Erntegeschwindigkeit.</de>
             <ru>В это время суток влажность урожая высока, что снижает скорость комбайна.</ru>
             <pl>Wilgotność uprawy jest wysoka o tej porze dnia przez co zmniejszy się prędkość pracy kombajnu</pl>
             <br>A umidade da lavoura é alta nesta hora do dia reduzindo a velocidade da colheitadeira</br>
@@ -245,7 +245,7 @@ v1.0.1.0
         <text name="combineDaytimeTooltip">
             <fr>Tient compte de l'heure de la journée pour limiter la vitesse afin de simuler l'humidité des cultures</fr>
             <en>Consider daytime to limit speed to simulate crop moisture</en>
-            <de>Erwägen Sie tagsüber eine Geschwindigkeitsbegrenzung, um die Feuchtigkeit der Ernte zu simulieren.</de>
+            <de>Um die Feuchte der Feldfrüchte zu simulieren, wird zu bestimmten Tageszeiten die Erntegeschwindigkeit reduziert.</de>
             <ru>Учитывайте время суток, чтобы ограничить скорость для имитации влажности урожая.</ru>
             <pl>Zastanów się nad porą dnia, aby ograniczyć prędkość, aby symulować wilgotność upraw</pl>
             <br>Considere o dia para limitar a velocidade para simular a umidade da cultura</br>
