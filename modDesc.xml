@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="107">
     <author>yumi</author>
-    <version>1.0.2.0</version>        
+    <version>1.0.2.0</version>
     <title>
         <en>Combine XPerience</en>
     </title>
@@ -18,7 +18,7 @@ GitHub link: https://github.com/yumi-modding/FS25_CombineXP
 
 Changelog:
 v1.0.2.0
-  - Fix error with combine vehicle with no category (like in  Etruria map)
+  - Fix error with combine vehicle with no category (like in  Etruria map) and update german translation
 v1.0.1.0
   - Fix settings menu compatibility with other mods and adding additional fruits attributes
 ]]></en>
@@ -34,7 +34,7 @@ GitHub link: https://github.com/yumi-modding/FS25_CombineXP
 
 Changelog:
 v1.0.2.0
-  - Correction de l'erreur avec les moissonneuses sans catégorie (comme sur la carte d'Etruria)
+  - Correction de l'erreur avec les moissonneuses sans catégorie (comme sur la carte d'Etruria) et correction de la traduction allemande
 v1.0.1.0
   - Correction du menu des paramètres pour la compatibilité avec d'autres mods et ajout d'attributs pour les cultures supplémentaires
 ]]></fr>
@@ -50,7 +50,7 @@ GitHub link: https://github.com/yumi-modding/FS25_CombineXP
 
 Changelog:
 v1.0.2.0
-  - Fehler mit Mähdreschern ohne Kategorie behoben (wie auf der Etruria-Karte)
+  - Fehler mit Mähdreschern ohne Kategorie behoben (wie auf der Etruria-Karte) und Korrektur der deutschen Übersetzung
 v1.0.1.0
   - Behebt die Kompatibilität des Einstellungsmenüs mit anderen Mods und fügt zusätzliche Attribute für Früchte hinzu
 ]]></de>
@@ -66,7 +66,7 @@ GitHub link: https://github.com/yumi-modding/FS25_CombineXP
 
 Changelog:
 v1.0.2.0
-  - Исправление ошибки с комбайнами без категории (как на карте Etruria)
+  - Исправление ошибки с комбайнами без категории (как на карте Etruria), и исправлен немецкий перевод.
 v1.0.1.0
   - Исправлена совместимость меню настроек с другими модами и добавлены дополнительные атрибуты для культур
 ]]></ru>
@@ -82,7 +82,7 @@ GitHub link: https://github.com/yumi-modding/FS25_CombineXP
 
 Changelog:
 v1.0.2.0
-  - Naprawiono błąd z pojazdem łączonym bez kategorii (jak na mapie Etruria)
+  - Naprawiono błąd z pojazdem łączonym bez kategorii (jak na mapie Etruria)a niemieckie tłumaczenie zostało poprawione.
 v1.0.1.0
   - Naprawiono kompatybilność menu ustawień z innymi modami i dodano dodatkowe atrybuty dla upraw
 ]]></pl>
@@ -98,7 +98,7 @@ GitHub link: https://github.com/yumi-modding/FS25_CombineXP
 
 Changelog:
 v1.0.2.0
-  - Corrigido erro ao combinar veículos sem categoria (como no mapa Etruria)
+  - Corrigido erro ao combinar veículos sem categoria (como no mapa Etruria) e a tradução para o alemão foi corrigida.
 v1.0.1.0
   - Corrige a compatibilidade do menu de configurações com outros mods e adiciona atributos adicionais para culturas
 ]]></br>
@@ -114,7 +114,7 @@ GitHub link: https://github.com/yumi-modding/FS25_CombineXP
 
 Changelog:
 v1.0.2.0
-  - Risolto l'errore relativo alla combinazione di veicoli senza categoria (come nella mappa dell'Etruria).
+  - Risolto l'errore relativo alla combinazione di veicoli senza categoria (come nella mappa dell'Etruria) e la traduzione tedesca è stata corretta.
 v1.0.1.0
   - Corregge la compatibilità del menu delle impostazioni con altre mod e aggiunge attributi aggiuntivi per le colture
 ]]></it>   
@@ -130,7 +130,7 @@ GitHub link: https://github.com/yumi-modding/FS25_CombineXP
 
 Changelog:
 v1.0.2.0
-  - Corrigido erro ao combinar veículos sem categoria (como no mapa Etruria)
+  - Corrigido erro ao combinar veículos sem categoria (como no mapa Etruria) e a tradução alemã foi corrigida.
 v1.0.1.0
   - Corrige a compatibilidade do menu de definições com outros mods e adiciona atributos adicionais para culturas
 ]]></pt>	    
@@ -150,7 +150,7 @@ v1.0.1.0
             <ru>Сначала запустите систему обмолота комбайна!</ru>
             <pl>Najpierw musisz uruchomić młócarnię w kombajnie</pl>
             <br>Você deve primeiro iniciar o sistema de debulha</br>
-	        <it>Avviare prima il sistema di trebbiatura della mietitrebbia!</it>
+	    <it>Avviare prima il sistema di trebbiatura della mietitrebbia!</it>
             <pt>Primeiro inicia o tambor de debulha</pt>
         </text>
         <text name="warning_highMoistureAtThisTime">
@@ -160,7 +160,7 @@ v1.0.1.0
             <ru>В это время суток влажность урожая высока, что снижает скорость комбайна.</ru>
             <pl>Wilgotność uprawy jest wysoka o tej porze dnia przez co zmniejszy się prędkość pracy kombajnu</pl>
             <br>A umidade da lavoura é alta nesta hora do dia reduzindo a velocidade da colheitadeira</br>
-	        <it>L'umidità del raccolto è elevata a quest'ora del giorno e riduce il limite di velocità di raccolta.</it>
+	    <it>L'umidità del raccolto è elevata a quest'ora del giorno e riduce il limite di velocità di raccolta.</it>
             <pt>A seara ainda tem a humidade muito alta nesta altura do dia, a ceifeira irá andar devagar</pt>
         </text>
         <text name="combineGameplaySetting">
@@ -189,7 +189,7 @@ v1.0.1.0
             <ru>Аркада</ru>
             <pl>Zręcznościowy</pl>
             <br>Videogame</br>
-	        <it>Arcade</it>
+	    <it>Arcade</it>
             <pt>Simples</pt>
         </text>
         <text name="gameplayNormal">
@@ -199,7 +199,7 @@ v1.0.1.0
             <ru>Нормальный</ru>
             <pl>Normlany</pl>
             <br>Normal</br>
-	        <it>Normale</it>
+	    <it>Normale</it>
             <pt>Normal</pt>
         </text>
         <text name="gameplayRealistic">
@@ -219,7 +219,7 @@ v1.0.1.0
             <ru>Ограничение мощности двигателя</ru>
             <pl>Ograniczenie mocy silnika</pl>
             <br>Limite de potência do motor</br>
-	        <it>Limite di potenza del motore</it>
+	    <it>Limite di potenza del motore</it>
             <pt>Limte da Potência do motor</pt>
 	</text>
         <text name="combinePowerTooltip">
@@ -229,7 +229,7 @@ v1.0.1.0
             <ru>Учитывайте мощность двигателя, чтобы ограничить скорость сбора урожая</ru>
             <pl>Uwzględnij moc silnika, aby ograniczyć prędkość zbioru</pl>
             <br>Considere a potência do motor para limitar a velocidade de colheita</br>
-	        <it>Considerare la potenza del motore per limitare la velocità di raccolta</it>
+	    <it>Considerare la potenza del motore per limitare la velocità di raccolta</it>
             <pt>Considere a potência do motor para limitar a velocidade da ceifieira</pt>
         </text>
         <text name="combineDaytimeSetting">
